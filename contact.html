@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="lccmoose.png">
+ <title>LCC MOOSE</title>
+ <link rel="stylesheet" href="stylesheet.css">
+ <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+ </head>
+ 
+ <body>
+ <!--this is for navigation-->
+<div class="topnav">
+<a href="index.html">HOME</a>
+<a href="about.html">ABOUT</a>
+<a href="standings.html">STANDINGS</a>
+<a href="contact.html">CONTACT</a>
+<!--this is for image on nav-->
+<img src="lccmoose.png" alt="logo" width="80" height="70" style="float:right;">
+</div>
+
+<!--This is for contact text-->
+<h1>CONTACT US</h1>
+<p>We are glad to hear from you and answer any question!</p>
+<p>LCC International University</p>
+<p>Kretingos g.36, LT-92307 Klaipeda</p>
+
+<!--this is for -->
+<div class="contactus">
+
+<a href="https://www.facebook.com/LCC.Moose/">
+<img id="fb" alt="fb" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" width="58" height="58" style="padding:15px" align="center">
+</a>
+<a href="https://www.youtube.com/channel/UCB72sTbt0PIsKA5uMGe2m2g">
+<img id="yt" alt="yt" src="https://cdn3.iconfinder.com/data/icons/social-icons-5/607/YouTube_Play.png" width="58" height="58" style="padding:15px" align="center">
+</a>
+<a href="https://www.instagram.com/moosebasketball/">
+<img id="insta" alt="insta" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" width="58" height="58" style="padding:15px" align="center">
+</a>
+</div>
+
+<!--google map-->
+
+<div id="map" style="width:400px;height:400px;float:left"></div>
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(55.731250, 21.132994), zoom: 10
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHlOltbObN6kPp7a25NvxpZ5GS-5Phshw &callback=myMap"></script>
+
+ 
+<!--this is for footer-->
+<div class="footer">
+<span>SPONSORS</span>
+<img src="danvite.png" alt="danvite" width="90" height="40">
+<img src="saule.png" alt="saule" width="90" height="40">
+</div>
+
+</body>
+
+</html>
